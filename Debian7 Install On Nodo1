@@ -1,8 +1,10 @@
-*Installing dependencies in Debian7 Nodo1 (Pre-Configured Enviroment)*
+*Installing dependencies in Debian7 Nodo1 (Pre-Configured Enviroment) Venv*
 
 pip install django==1.4
 
+pip install south
 pip install cython
+pip install Pillow
 pip install git+http://github.com/numpy/numpy/
 pip install git+http://github.com/scipy/scipy/
 
