@@ -1,0 +1,28 @@
+*Installing dependencies in Debian7 Nodo1 (Pre-Configured Enviroment)*
+
+pip install django==1.4
+
+pip install cython
+pip install git+http://github.com/numpy/numpy/
+pip install git+http://github.com/scipy/scipy/
+pip install PIL
+
+##### Clone Project eGetOpinion 3.0
+
+git clone https://github.com/jjoc/getopinionated
+
+##### Getting started (To Run Development Server)
+
+python manage.py localserver
+
+
+##### Notes for setting up a production server
+##### Make sure to add a local_settings.py file.
+##### Set up cronjob to call Voting every 5 minutes:
+
+python manage.py updatevoting
+
+#eGetOpinion 3.0 is Inspired at Jonas's P-) Getopinionated & Oscar's eCidadania & AZL Kiosk's CENATIC 
+
+
+
