@@ -5,8 +5,11 @@ pip install django==1.4
 pip install south
 pip install cython
 pip install Pillow
+pip install south django-authopenid oauth2ls
+
 pip install git+http://github.com/numpy/numpy/
 pip install git+http://github.com/scipy/scipy/
+
 
 ##### Clone Project eGetOpinion 3.0
 
