@@ -1,0 +1,15 @@
+Include django-easy-pdf, xhtml2pdf>=0.0.6 and reportlab>=2.7,<3 in your requirements.txt file.
+Add easy_pdf to INSTALLED_APPS.
+Create HTML template for PDF document and add a view that will render it:
+
+{% extends "easy_pdf/base.html" %}
+
+{% block content %}
+    <div id="content">
+        <h1>Hi there! These is for rendering HTML to PDF for Sign |.|...|</h1>
+    </div>
+{% endblock %}
+from easy_pdf.views import PDFTemplateView
+
+class HelloPDFView(PDFTemplateView):
+    template_name = "document-exposed.html"
